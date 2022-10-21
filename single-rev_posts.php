@@ -1,39 +1,39 @@
 <?php get_header(); ?>
 
 <!-- Page Content -->
-<div class="main-content clear-fix<?php echo ( ashe_options( 'general_single_width' ) === 'boxed'  ) ? ' boxed-wrapper': ''; ?>" data-sidebar-sticky="<?php echo esc_attr( ashe_options( 'general_sidebar_sticky' )  ); ?>">
+<div class="main-content clear-fix<?php echo (ashe_options('general_single_width') === 'boxed') ? ' boxed-wrapper' : ''; ?>" data-sidebar-sticky="<?php echo esc_attr(ashe_options('general_sidebar_sticky')); ?>">
 
 
 	<?php
 
 	// Sidebar Alt 
-	get_template_part( 'templates/sidebars/sidebar', 'alt' ); 
+	get_template_part('templates/sidebars/sidebar', 'alt');
 
 	// Sidebar Left
-	get_template_part( 'templates/sidebars/sidebar', 'left' );
+	get_template_part('templates/sidebars/sidebar', 'left');
 
 	?>
 
 	<!-- Main Container -->
 	<div class="main-container">
 
-		<?php		
+		<?php
 		// Single Post Path added by Abdelrhman DEV.
-		get_template_part( 'templates/single/post', 'revcontent' );
-		
+		get_template_part('templates/single/post', 'revcontent');
+
 		// Author Description
-		if ( ashe_options( 'single_page_show_author_desc' ) === true ) {
-			get_template_part( 'templates/single/author', 'description' );
+		if (ashe_options('single_page_show_author_desc') === true) {
+			get_template_part('templates/single/author', 'description');
 		}
 
 		// Single Navigation
-		get_template_part( 'templates/single/single', 'navigation' );
-	
+		get_template_part('templates/single/single', 'navigation');
+
 		// Related Posts
-		ashe_related_posts( esc_html__( 'You May Also Like','ashe' ), ashe_options( 'single_page_related_orderby' ) );
+		ashe_related_posts(esc_html__('You May Also Like', 'ashe'), ashe_options('single_page_related_orderby'));
 
 		// Comments
-		get_template_part( 'templates/single/comments', 'area' );
+		get_template_part('templates/single/comments', 'area');
 
 		?>
 
@@ -42,7 +42,7 @@
 
 	<?php // Sidebar Right
 
-	get_template_part( 'templates/sidebars/sidebar', 'right' );
+	get_template_part('templates/sidebars/sidebar', 'right');
 
 	?>
 
