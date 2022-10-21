@@ -57,7 +57,7 @@ get_header();
 				
 echo	'<div class="row ">';
 			echo	'<div class="col-sm ">';
-									// social media icon add bt Abdo Ezzat from um _ database
+									// social media icon add by Abdo Ezzat from um _ database
 			
 			'<div id="post-avatar">'.get_avatar(get_the_author_meta('ID'), $size = 50).'<br>';
 								 '</div>';
